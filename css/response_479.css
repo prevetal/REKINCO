@@ -1,0 +1,293 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 8px;
+        --font_size: 12px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 32px;
+        height: 70px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .data
+    {
+        width: 100%;
+        margin-left: 12px;
+    }
+
+
+    .main_slider .pre_title
+    {
+        font-size: 12px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 16px;
+    }
+
+
+    .main_slider .style
+    {
+        font-size: 12px;
+
+        top: 23%;
+        right: 0;
+        bottom: 196px;
+
+        height: 200px;
+        padding: 20px 16px 40px 24%;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category .name
+    {
+        bottom: var(--cont_padding);
+
+        padding: 10px var(--cont_padding);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .title
+    {
+        font-size: 20px;
+        font-weight: 500;
+
+        padding-right: calc(var(--cont_padding) * 5);
+        padding-left: var(--cont_padding);
+    }
+
+
+    .products .title:after
+    {
+        width: calc(var(--cont_padding) * 4);
+    }
+
+
+    .products .toggles
+    {
+        justify-content: space-between;
+
+        margin-bottom: calc(var(--cont_padding) * 2);
+        padding: 0 var(--cont_padding);
+
+        gap: 0;
+    }
+
+
+    .products .main > .swiper-button-next,
+    .products .main > .swiper-button-prev
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .products .swiper-button-next,
+    .products .swiper-button-prev
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .products .swiper-button-next .icon,
+    .products .swiper-button-prev .icon
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .products .product .data
+    {
+        padding-right: var(--cont_padding);
+        padding-left: var(--cont_padding);
+    }
+
+
+    .products .product .product_name
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*----------------
+        Collection
+    ----------------*/
+    .collection2 .data
+    {
+        padding: calc(var(--cont_padding) * 3) calc(var(--cont_padding) * 2);
+    }
+
+
+    .collection .data .title
+    {
+        font-size: 28px;
+    }
+
+
+    .collection .data .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery .caption
+    {
+        padding-left: calc(var(--cont_padding) * 5);
+    }
+
+
+    .gallery .caption:before
+    {
+        width: calc(var(--cont_padding) * 4);
+    }
+
+
+
+    /*-----------------
+        About brand
+    -----------------*/
+    .about_brand .info
+    {
+        padding: 0 var(--cont_padding);
+    }
+
+
+    .about_brand .info2
+    {
+        bottom: 244px;
+    }
+
+
+    .about_brand .info .title
+    {
+        font-size: 40px;
+
+        width: 300px;
+    }
+
+
+    .about_brand .info .title.small
+    {
+        font-size: 32px;
+    }
+
+
+    .about_brand .info .desc
+    {
+        font-size: 14px;
+
+        width: 252px;
+    }
+
+
+    .about_brand .info2 .desc
+    {
+        width: 100%;
+    }
+
+
+    .about_brand .info2 .title + .desc
+    {
+        margin-top: 8px;
+    }
+
+
+    .about_brand .images .image3
+    {
+        width: 100%;
+        margin-top: 212px;
+    }
+
+
+    .about_brand .images .image3 img
+    {
+        height: 230px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-top: calc(var(--cont_padding) * 5);
+        padding-right: var(--cont_padding);
+        padding-bottom: calc(var(--cont_padding) * 3);
+        padding-left: var(--cont_padding);
+    }
+
+
+    .contacts_info .block_title
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: calc(var(--cont_padding) * 3) var(--cont_padding) calc(var(--cont_padding) * 4);
+    }
+
+
+    footer .subscribe .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 12px;
+        padding: 0;
+    }
+
+
+    footer .subscribe form .field
+    {
+        width: 100%;
+    }
+
+
+    footer .subscribe form .submit_btn
+    {
+        order: 3;
+
+        margin: 16px auto 0;
+    }
+
+
+    footer .subscribe form .checkbox
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,748 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 24px;
+        --font_size: 16px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 54px;
+        height: 124px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        gap: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: var(--cont_padding) 0;
+    }
+
+
+    header .anchors
+    {
+        gap: 40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        padding-block: 131px 26vh;
+    }
+
+
+    .main_slider .data
+    {
+        width: 560px;
+        margin-left: 0;
+    }
+
+
+    .main_slider .pre_title
+    {
+        font-size: 18px;
+
+        top: 4px;
+    }
+
+
+    .main_slider .logo img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .main_slider .style
+    {
+        font-size: 20px;
+
+        bottom: 196px;
+
+        width: 268px;
+        height: 324px;
+        padding: 40px 24px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 28px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category .name
+    {
+        font-size: var(--font_size);
+
+        bottom: 12%;
+
+        width: calc(100% - var(--cont_padding) * 2);
+        padding: 12px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        padding: 100px 0 124px;
+    }
+
+
+    .products .titles
+    {
+        margin-bottom: 28px;
+    }
+
+
+    .products .title
+    {
+        font-size: 40px;
+
+        padding-right: 88px;
+    }
+
+
+    .products .title:after
+    {
+        width: 64px;
+    }
+
+
+    .products .toggles
+    {
+        margin-bottom: 40px;
+
+        gap: 64px;
+    }
+
+
+    .products .toggles .btn
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .products .main > .swiper-button-next,
+    .products .main > .swiper-button-prev
+    {
+        margin-bottom: 68px;
+    }
+
+
+    .products .main > .swiper-button-next,
+    .products .main > .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .products .main > .swiper-button-prev
+    {
+        right: 72px;
+    }
+
+
+    .products .product .images
+    {
+        width: calc(100% - 484px);
+
+        gap: var(--cont_padding);
+    }
+
+
+    .products .swiper-button-next,
+    .products .swiper-button-prev
+    {
+        width: 72px;
+        height: 72px;
+    }
+
+
+    .products .product .data
+    {
+        width: 412px;
+        min-height: 1125px;
+    }
+
+
+    .products .product .desc
+    {
+        font-size: var(--font_size);
+
+        margin-top: 40px;
+    }
+
+
+    .products .product .made_in
+    {
+        margin-top: 16px;
+    }
+
+
+    .products .product .compound
+    {
+        margin-top: 32px;
+
+        gap: 12px;
+    }
+
+
+    .products .product .options
+    {
+        margin-top: 40px;
+    }
+
+    .products .product .options .exp
+    {
+        font-size: var(--font_size);
+
+        margin-top: 12px;
+    }
+
+
+    .products .product .options .size .val
+    {
+        gap: 32px;
+    }
+
+
+    .products .product .options .size label
+    {
+        font-size: 18px;
+    }
+
+
+    .products .product .buy
+    {
+        margin-top: 48px;
+
+        gap: 16px;
+    }
+
+
+    .products .product .buy a
+    {
+        min-height: 64px;
+    }
+
+
+    .products .product .buy a span
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------
+        Collection
+    ----------------*/
+    .collection .data
+    {
+        padding: 180px 0 80px;
+    }
+
+
+    .collection .info
+    {
+        gap: 20px;
+    }
+
+
+    .collection .data .title
+    {
+        font-size: 44px;
+    }
+
+
+    .collection .data .desc
+    {
+        font-size: 24px;
+    }
+
+
+    .collection .point_info
+    {
+        width: 260px;
+        padding: var(--cont_padding);
+    }
+
+
+    .collection .point_info .name
+    {
+        font-size: 28px;
+    }
+
+
+    .collection .point_info .desc
+    {
+        font-size: 14px;
+
+        margin-top: 28px;
+    }
+
+
+    .collection .point_info .buy
+    {
+        margin-top: 28px;
+
+        gap: calc(var(--cont_padding) / 2);
+    }
+
+
+    .collection .point_info .buy a
+    {
+        min-height: 48px;
+    }
+
+
+    .collection .link a
+    {
+        padding: 0 27px;
+    }
+
+
+
+    .collection2 .data
+    {
+        padding: 112px 60px 76px;
+    }
+
+
+
+    /*-------------
+        Gallery
+    -------------*/
+    .gallery
+    {
+        margin-bottom: calc(var(--cont_padding) * 3);
+    }
+
+
+    .gallery .cols .col
+    {
+        width: calc(50% - var(--cont_padding) / 2);
+
+        gap: calc(var(--cont_padding) * 2);
+    }
+
+
+    .gallery .row
+    {
+        margin-top: var(--cont_padding);
+        padding: 0 var(--cont_padding);
+    }
+
+
+    .gallery .row > *
+    {
+        width: calc(50% - var(--cont_padding) / 2);
+    }
+
+
+    .gallery .item
+    {
+        gap: var(--cont_padding);
+    }
+
+
+    .gallery .caption
+    {
+        font-size: var(--font_size);
+
+        width: 600px;
+        padding-left: 120px;
+    }
+
+
+    .gallery .info
+    {
+        right: var(--cont_padding);
+        bottom: var(--cont_padding);
+
+        width: 268px;
+        max-width: calc(100% - var(--cont_padding) * 2);
+        padding: var(--cont_padding);
+    }
+
+
+    .gallery .info .name
+    {
+        font-size: 28px;
+    }
+
+
+    .gallery .info .desc
+    {
+        font-size: 14px;
+
+        margin-top: 28px;
+    }
+
+
+    .gallery .info .buy
+    {
+        margin-top: 28px;
+
+        gap: 12px;
+    }
+
+
+    .gallery .info .buy a
+    {
+        min-height: 48px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding: 80px 0 100px;
+    }
+
+
+    .about_info .logo
+    {
+        margin-left: -95px;
+    }
+
+
+    .about_info .logo img
+    {
+        width: 1010px;
+    }
+
+
+    .about_info .desc
+    {
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+
+
+    .about_info .desc:before
+    {
+        width: 80px;
+    }
+
+
+    .about_info .link
+    {
+        margin-top: 40px;
+        padding-left: 60px;
+    }
+
+
+    .about_info .link a
+    {
+        font-size: 15px;
+
+        padding: 0 27px;
+    }
+
+
+
+    /*-----------------
+        About brand
+    -----------------*/
+    .about_brand
+    {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+    .about_brand .block_title
+    {
+        font-size: 20px;
+
+        top: 108px;
+
+        padding-right: calc(var(--cont_padding) * 3);
+    }
+
+
+    .about_brand .block_title:after
+    {
+        width: calc(var(--cont_padding) * 2);
+    }
+
+
+    .about_brand .info
+    {
+        gap: 20px;
+    }
+
+
+    .about_brand .info1
+    {
+        top: 248px;
+    }
+
+
+    .about_brand .info2
+    {
+        bottom: 60px;
+
+        gap: 4px;
+    }
+
+
+    .about_brand .info .title
+    {
+        font-size: 68px;
+
+        width: 500px;
+    }
+
+
+    .about_brand .info .title.small
+    {
+        font-size: 52px;
+
+        width: 348px;
+    }
+
+
+    .about_brand .info .desc
+    {
+        font-size: 18px;
+
+        width: 248px;
+    }
+
+
+    .about_brand .info2 .title + .desc
+    {
+        margin-top: 16px;
+    }
+
+
+    .about_brand .images
+    {
+        width: 1460px;
+    }
+
+
+    .about_brand .images .image1
+    {
+        width: 268px;
+    }
+
+    .about_brand .images .image2
+    {
+        width: calc(100% - 816px);
+    }
+
+    .about_brand .images .image3
+    {
+        width: 500px;
+    }
+
+
+    .about_brand .bottom
+    {
+        margin-top: 40px;
+        padding: 0 var(--cont_padding);
+    }
+
+    .about_brand .bottom .item2
+    {
+        width: calc(28.138% - 52px);
+    }
+
+    .about_brand .bottom .item3
+    {
+        width: calc(35.931% + 4px);
+    }
+
+
+    .about_brand .bottom .caption
+    {
+        font-size: var(--font_size);
+
+        margin-top: 32px;
+        padding-left: 0;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        padding-bottom: 100px;
+    }
+
+
+    .contacts_info .block_title
+    {
+        font-size: 36px;
+        line-height: 100%;
+
+        margin-bottom: 40px;
+    }
+
+
+    .contacts_info .block_title .icon
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .contacts_info .list
+    {
+        gap: calc(var(--cont_padding) * 2);
+    }
+
+
+    .contacts_info .item .label
+    {
+        font-size: 18px;
+    }
+
+
+    .contacts_info .item .val
+    {
+        font-size: 18px;
+
+        width: 332px;
+    }
+
+
+    .contacts_info .item .phone > * + *,
+    .contacts_info .item .email > * + *
+    {
+        width: calc(100% - 140px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 80px 0;
+    }
+
+
+    footer .info
+    {
+        width: calc(100% - 268px);
+        padding-right: 140px;
+    }
+
+
+    footer .menu
+    {
+        font-size: 15px;
+    }
+
+
+    footer .subscribe
+    {
+        margin-top: 60px;
+    }
+
+
+    footer .subscribe .title
+    {
+        font-size: 20px;
+    }
+
+
+    footer .subscribe form .field
+    {
+        width: calc(100% - 168px);
+    }
+
+
+    footer .subscribe form .input
+    {
+        font-size: 15px;
+
+        height: 48px;
+    }
+
+
+    footer .subscribe form .submit_btn
+    {
+        font-size: 15px;
+
+        width: 168px;
+        height: 48px;
+    }
+
+
+    footer .subscribe form .agree
+    {
+        margin-top: 12px;
+    }
+
+
+    footer .subscribe form .checkbox
+    {
+        font-size: 13px;
+
+        width: 412px;
+        min-height: 28px;
+        padding-left: 40px;
+    }
+
+
+    footer .subscribe form .checkbox .check
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    footer .subscribe form .checkbox .check .icon
+    {
+        width: 16px;
+        height: 14px;
+    }
+
+
+    footer .privacy_policy_link
+    {
+        margin-left: 120px;
+    }
+}
