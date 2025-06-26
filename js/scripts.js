@@ -268,7 +268,32 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('body').toggleClass('lock')
 		$('.mob_menu').toggleClass('show')
 	})
+
+
+	// 'Up' button
+	document.querySelector('.btnUp').addEventListener('click', (e) => {
+		e.preventDefault()
+
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		})
+	})
 })
+
+
+
+window.addEventListener('scroll', () => {
+  const viewportHeight = window.innerHeight;
+
+  document.querySelectorAll('.parallax').forEach(el => {
+    const speed = parseFloat(el.dataset.speed) || 0.1;
+    const rect = el.getBoundingClientRect();
+    const offset = (rect.top - viewportHeight / 2) * speed;
+
+    el.style.transform = `translateY(${offset}px)`;
+  });
+});
 
 
 

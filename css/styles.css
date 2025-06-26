@@ -887,7 +887,7 @@ header .anchors .dropdown a:hover
     height: 100%;
     padding: 67px 60px 0;
 
-    transition: .5s linear 0.5s;
+    transition: .5s linear .5s;
     transform: translateY(25%);
     pointer-events: none;
 
@@ -2211,17 +2211,66 @@ header .anchors .dropdown a:hover
 -------------*/
 .gallery
 {
+    position: relative;
+    z-index: 9;
+
     margin-bottom: 73px;
 }
 
 
 .gallery .cols
 {
+    position: relative;
+
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+
+.gallery .right_image
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: block;
+
+    width: 368px;
+    max-width: 100%;
+    margin-left: 32px;
+}
+
+
+.gallery .right_image img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+.gallery .left_image
+{
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+
+    display: block;
+
+    width: 276px;
+    max-width: 100%;
+    margin-right: 32px;
+}
+
+
+.gallery .left_image img
+{
+    display: block;
+
+    width: 100%;
 }
 
 
@@ -2238,7 +2287,7 @@ header .anchors .dropdown a:hover
 
 .gallery .cols .col + .col
 {
-    padding-top: 254px;
+    padding-top: 120px;
 }
 
 
@@ -2266,7 +2315,21 @@ header .anchors .dropdown a:hover
     display: flex;
     flex-direction: column;
 
+    margin-bottom: -30vh;
+
     gap: 32px;
+}
+
+
+.gallery .row .item
+{
+    margin-bottom: -10vw;
+}
+
+
+.gallery .cols .col + .col .item + .item
+{
+    margin-bottom: 0;
 }
 
 
@@ -3067,6 +3130,39 @@ footer .info
     width: calc(100% - 185px);
     margin-left: auto;
     padding-right: 185px;
+}
+
+
+
+footer .btnUp
+{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 74px;
+    height: 74px;
+
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+
+footer .btnUp .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    transform: rotate(-90deg);
 }
 
 

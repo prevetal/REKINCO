@@ -628,6 +628,12 @@
     }
 
 
+    footer .btnUp
+    {
+        display: none;
+    }
+
+
     footer .menu
     {
         font-size: 14px;

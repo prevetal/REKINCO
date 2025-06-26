@@ -55,4 +55,18 @@
         width: calc(100% - 240px);
         padding-right: 148px;
     }
+
+
+    footer .btnUp
+    {
+        width: 64px;
+        height: 64px;
+    }
+
+
+    footer .btnUp .icon
+    {
+        width: 22px;
+        height: 22px;
+    }
 }

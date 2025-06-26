@@ -670,6 +670,13 @@
     }
 
 
+    footer .btnUp
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
     footer .menu
     {
         font-size: 15px;

@@ -67,8 +67,8 @@
     {
         font-size: 16px;
 
-        right: 0;
         top: 23%;
+        right: 0;
         bottom: 196px;
 
         width: 50%;
@@ -268,6 +268,15 @@
     .gallery .caption:before
     {
         top: 7px;
+    }
+
+
+    .gallery .item,
+    .gallery .row .item
+    {
+        margin-bottom: 0;
+
+        transform: none !important;
     }
 
 
