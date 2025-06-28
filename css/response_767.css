@@ -35,9 +35,10 @@
     -----------------*/
     .main_slider .cont
     {
-        min-height: 450px;
+        height: 450px;
+        max-height: 100vh;
 
-        padding-block: 96px 12vh;
+        padding-block: 96px calc(var(--main_slider_height) * .20);
     }
 
 
@@ -213,7 +214,7 @@
     }
 
 
-    .collection .image,
+    .collection .image:not(.mob_show),
     .collection .points
     {
         display: none;

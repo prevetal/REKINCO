@@ -173,6 +173,7 @@ input[type=number]
     --scroll_width: 17px;
     --cont_padding: 24px;
     --font_size: 17px;
+    --main_slider_height: 100vh;
     --font_family: 'Geometria', 'Arial', sans-serif;
 }
 
@@ -768,14 +769,16 @@ header .anchors .dropdown a:hover
 .main_slider .cont
 {
     display: flex;
+    display: flex;
     align-content: flex-end;
     align-items: flex-end;
     flex-wrap: wrap;
     justify-content: center;
 
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 1080px;
 
-    padding-block: 124px 33.722vh;
+    padding-block: 124px calc(var(--main_slider_height) * .33722);
 }
 
 

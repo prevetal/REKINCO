@@ -50,7 +50,7 @@
     -----------------*/
     .main_slider .cont
     {
-        padding-block: 131px 26vh;
+        padding-block: 131px calc(var(--main_slider_height) * .24);
     }
 
 

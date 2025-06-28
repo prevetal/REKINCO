@@ -283,17 +283,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+window.addEventListener('load', () => {
+	// Main slider height
+	mainSliderVar()
+})
+
+
+
 window.addEventListener('scroll', () => {
-  const viewportHeight = window.innerHeight;
+	const viewportHeight = window.innerHeight
 
-  document.querySelectorAll('.parallax').forEach(el => {
-    const speed = parseFloat(el.dataset.speed) || 0.1;
-    const rect = el.getBoundingClientRect();
-    const offset = (rect.top - viewportHeight / 2) * speed;
+	document.querySelectorAll('.parallax').forEach(el => {
+		const speed = parseFloat(el.dataset.speed) || 0.1,
+			rect = el.getBoundingClientRect(),
+			offset = (rect.top - viewportHeight / 2) * speed
 
-    el.style.transform = `translateY(${offset}px)`;
-  });
-});
+		el.style.transform = `translateY(${offset}px)`
+	})
+})
 
 
 
@@ -306,4 +313,18 @@ window.addEventListener('resize', function () {
 		// Overwrite window width
 		WW = window.innerWidth || document.clientWidth || BODY.clientWidth
 	}
+
+	// Main slider height
+	mainSliderVar()
 })
+
+
+
+// Main slider height
+function mainSliderVar() {
+  const el = document.querySelector('.main_slider .cont')
+
+  if (!el) return
+
+  document.documentElement.style.setProperty('--main_slider_height', `${el.offsetHeight}px`)
+}
